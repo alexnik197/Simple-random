@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Num</title>
+  </head>
+  <body>
+    <section>
+      <p class="text">Type the maximum number</p>
+      <div class="maxValue">
+        <input type="number" id="maxNumber" />
+        <button id="maxValue" class="max-num">✔</button>
+      </div>
+      <span class="number">X</span>
+      <button id="random" class="btn-random">Random</button>
+    </section>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: rgb(105, 165, 255);
+        padding-top: 50px;
+      }
+      section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+      }
+      .number {
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+      .btn-random {
+        width: 120px;
+        height: 60px;
+        background-color: rgb(233, 203, 32);
+        border: 1px solid rgb(56, 56, 56);
+        font-size: 22px;
+        border-radius: 10px;
+        transition: all 0.1s;
+        margin-bottom: 15px;
+      }
+      .btn-random:hover {
+        border: 2px solid rgb(56, 56, 56);
+      }
+      .btn-random:active {
+        background-color: rgb(243, 223, 111);
+      }
+      .text {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+      .maxValue {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+      input {
+        font-size: 25px;
+        width: 100px;
+        height: 50px;
+        text-align: center;
+      }
+      .max-num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 50px;
+        background-color: rgb(218, 218, 218);
+        border: 1px solid rgb(56, 56, 56);
+        font-size: 18px;
+        border-radius: 10px;
+        transition: all 0.1s;
+      }
+      .max-num:hover {
+        border: 2px solid rgb(56, 56, 56);
+      }
+      .max-num:active {
+        background-color: rgb(81, 189, 71);
+      }
+    </style>
+    <script src="script.js"></script>
+  </body>
+</html>
